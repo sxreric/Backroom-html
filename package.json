@@ -1,0 +1,10 @@
+{
+  "name": "backrooms-render-wrapper",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2"
+  }
+}

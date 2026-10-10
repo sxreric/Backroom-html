@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sx-backroom
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install --no-audit --no-fund && node render-unpack.mjs && npm install --omit=dev --no-audit --no-fund && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    autoDeploy: true
